@@ -14,15 +14,21 @@ public class HasVowels {
         test2();
         test3();
     }
+
+    @Test
     public void test1() {
         String input = "qwrtypsdfghjklzxcvbnm";
         Assert.assertFalse(VowelUtils.hasVowels(input));
     }
 
+    @Test
+
     public void test2() {
         String input = "qwrtypsdfghjklzxcvbnma";
         Assert.assertTrue(VowelUtils.hasVowels(input));
     }
+
+    @Test
 
     public void test3() {
         String input = "qwrtypsdfghjklzxcvbnm_";
